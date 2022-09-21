@@ -9,7 +9,3 @@ class Rule:
     name: str
     local_id: str
     description: str = ""
-
-    @property
-    def type(self):
-        return "rule"
