@@ -1,9 +1,12 @@
+"""Form outliner
+
+Will become launch point for command line app
+"""
+
+
 def main():
+    """ Will be command line entry point """
     print("Hello, world!")
-
-
-def add(a, b):
-    return a + b
 
 
 if __name__ == "__main__":
