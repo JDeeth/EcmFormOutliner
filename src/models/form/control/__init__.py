@@ -1,2 +1,3 @@
 # /src/models/form/control
-# pylint: disable=C0111
+
+from models.form.control.base_control import BaseControl

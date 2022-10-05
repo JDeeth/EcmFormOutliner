@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Rule:
-    """ Form rule """
+    """Form rule"""
 
     name: str
     local_id: str

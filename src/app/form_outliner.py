@@ -5,7 +5,7 @@ Will become launch point for command line app
 
 
 def main():
-    """ Will be command line entry point """
+    """Will be command line entry point"""
     print("Hello, world!")
 
 

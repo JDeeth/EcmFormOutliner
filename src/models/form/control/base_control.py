@@ -1,0 +1,2 @@
+class BaseControl:
+    pass

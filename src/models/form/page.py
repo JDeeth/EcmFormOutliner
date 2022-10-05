@@ -1,4 +1,3 @@
-# pylint: disable=C0111
 from dataclasses import dataclass, field
 from typing import List
 
@@ -7,7 +6,7 @@ from models.form.section import Section
 
 @dataclass
 class Page:
-    """ Form page """
+    """Form page"""
 
     name: str
     title: str
