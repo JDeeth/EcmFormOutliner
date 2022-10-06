@@ -4,6 +4,9 @@ from typing import List
 from models.form.section import Section
 
 
+# pylint: disable=duplicate-code
+
+
 @dataclass
 class Page:
     """Form page"""

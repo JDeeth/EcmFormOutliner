@@ -1,9 +1,12 @@
 """Tests parsing function end to end"""
-import pytest
 from json import JSONDecodeError
+import pytest
 
 from app.form_parser import FormParser
 from models import Form
+from models.form.subsection import PlainRun, RepeatableGroup
+
+# pylint: disable=invalid-name,missing-function-docstring
 
 
 def should_throw_filenotfound_if_infile_missing():
@@ -20,8 +23,8 @@ def should_throw_jsondecodeerror_if_infile_not_json():
         FormParser.load(filename)
 
 
-@pytest.fixture
-def lunch_form():
+@pytest.fixture(name="lunch_form")
+def fixture_lunch_form():
     filename = "tests/Lunch planning_1.json"
     return FormParser.load(filename)
 
@@ -63,4 +66,12 @@ def should_find_one_subsection_with_five_controls_in_p1s2():
     assert venue_details_section.title == "Venue details"
     assert len(venue_details_section.subsections) == 1
     first_subsection = venue_details_section.subsections[0]
-    assert len(first_subsection) == 5
+    assert len(first_subsection.controls) == 5
+
+
+def should_find_run_group_run_in_p3s2():
+    lunch_form = FormParser.load("tests/Lunch planning_1.json")
+    p3s2 = lunch_form.pages[2].sections[1]
+
+    for a, b in zip(p3s2.subsections, [PlainRun, RepeatableGroup, PlainRun]):
+        assert isinstance(a, b)

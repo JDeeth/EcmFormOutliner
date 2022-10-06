@@ -1,12 +1,10 @@
 from dataclasses import dataclass, field
-from typing import List, Union
+from typing import List
 
 
-from models.form.control import BaseControl
-from models.form.table import Table
-from models.form.repeatable_group import RepeatableGroup
+from models.form.subsection import Subsection
 
-Subsection = Union[List[BaseControl], Table, RepeatableGroup]
+# pylint: disable=duplicate-code
 
 
 @dataclass

@@ -1,4 +1,3 @@
-# pylint: disable=C0111
 from dataclasses import dataclass
 
 
