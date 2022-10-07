@@ -5,7 +5,7 @@
         "id": "eclipse"
     },
     "version": 1,
-    "designerVersion": "3.2.0",
+    "designerVersion": "3.3.0",
     "name": "Lunch planning",
     "type": "form",
     "subjectType": "PERSON",
@@ -38,6 +38,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "localId": "C10720115-08f7-45b8-90ac-8245688bb86e",
@@ -47,9 +48,11 @@
                                             "hidden": false,
                                             "name": "about_text",
                                             "inputSize": 12,
+                                            "displayClass": null,
                                             "alertType": "INFORMATION",
                                             "_type": "NewAlertControl",
                                             "subType": "ALERT",
+                                            "tabIndex": null,
                                             "alertBody": "This is a dummy form design for testing the [Eclipse Form Outliner](https://github.com/JDeeth/EcmFormOutliner)."
                                         }
                                     ]
@@ -104,11 +107,13 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewDateControl",
                                             "validation": {
                                                 "mandatory": "MANDATORY_ON_SAVE"
                                             },
-                                            "subType": "DATE"
+                                            "subType": "DATE",
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -120,7 +125,9 @@
                                         {
                                             "placeholderText": "HH:MM",
                                             "help": {
-                                                "text": "Must be HH:MM e.g. 09:45, 13:30 - not 9:45 or 09.45 or 1:30pm"
+                                                "text": "Must be HH:MM e.g. 09:45, 13:30 - not 9:45 or 09.45 or 1:30pm",
+                                                "link": null,
+                                                "title": null
                                             },
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -134,9 +141,11 @@
                                             "label": {
                                                 "value": "Start time",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -149,7 +158,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -177,6 +187,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "localId": "Cf116fee6-e8ed-4d16-aa95-284f30d0b1ad",
@@ -236,6 +247,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewSelectionControl",
                                             "validation": {
                                                 "minSelections": 0,
@@ -246,6 +258,7 @@
                                             "tabIndex": 0
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -259,9 +272,11 @@
                                             "label": {
                                                 "value": "Other venue",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -274,9 +289,11 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "localId": "C440bb01e-5c9d-4676-b302-5bbc1ce6c78d",
@@ -330,6 +347,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewSelectionControl",
                                             "validation": {
                                                 "minSelections": 0,
@@ -375,6 +393,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "localId": "C591c29e4-624b-4b4c-a0a8-182190d7e4c9",
@@ -422,6 +441,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewSelectionControl",
                                             "validation": {
                                                 "minSelections": 0,
@@ -432,6 +452,7 @@
                                             "tabIndex": 0
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -445,9 +466,11 @@
                                             "label": {
                                                 "value": "Service frequency",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -460,9 +483,11 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -480,6 +505,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -492,7 +518,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "RICH_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -538,13 +565,15 @@
                                             "number": 0,
                                             "width": 3,
                                             "label": {
+                                                "objectVersion": 0,
                                                 "value": "Name",
                                                 "width": 12,
-                                                "alignment": "LEFT",
-                                                "hidden": false
+                                                "hidden": false,
+                                                "alignment": "LEFT"
                                             },
                                             "controls": [
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "prependLabel": null,
@@ -562,6 +591,7 @@
                                                         "alignment": "RIGHT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewTextControl",
                                                     "validation": {
                                                         "dataType": "TEXT",
@@ -574,7 +604,8 @@
                                                     },
                                                     "numberOfRows": null,
                                                     "subType": "TEXT",
-                                                    "appendLabel": null
+                                                    "appendLabel": null,
+                                                    "tabIndex": null
                                                 }
                                             ]
                                         },
@@ -583,13 +614,15 @@
                                             "number": 1,
                                             "width": 4,
                                             "label": {
+                                                "objectVersion": 0,
                                                 "value": "Order",
                                                 "width": 12,
-                                                "alignment": "LEFT",
-                                                "hidden": false
+                                                "hidden": false,
+                                                "alignment": "LEFT"
                                             },
                                             "controls": [
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "prependLabel": null,
@@ -607,6 +640,7 @@
                                                         "alignment": "RIGHT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewTextControl",
                                                     "validation": {
                                                         "dataType": "TEXT",
@@ -619,7 +653,8 @@
                                                     },
                                                     "numberOfRows": null,
                                                     "subType": "RICH_TEXT",
-                                                    "appendLabel": null
+                                                    "appendLabel": null,
+                                                    "tabIndex": null
                                                 }
                                             ]
                                         },
@@ -628,10 +663,11 @@
                                             "number": 2,
                                             "width": 3,
                                             "label": {
+                                                "objectVersion": 0,
                                                 "value": "Date RSVP'd",
                                                 "width": 12,
-                                                "alignment": "LEFT",
-                                                "hidden": false
+                                                "hidden": false,
+                                                "alignment": "LEFT"
                                             },
                                             "controls": [
                                                 {
@@ -651,11 +687,13 @@
                                                         "alignment": "RIGHT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewDateControl",
                                                     "validation": {
                                                         "mandatory": "NOT_MANDATORY"
                                                     },
-                                                    "subType": "DATE"
+                                                    "subType": "DATE",
+                                                    "tabIndex": null
                                                 }
                                             ]
                                         },
@@ -664,13 +702,15 @@
                                             "number": 3,
                                             "width": 2,
                                             "label": {
+                                                "objectVersion": 0,
                                                 "value": "Can attend?",
                                                 "width": 12,
-                                                "alignment": "LEFT",
-                                                "hidden": false
+                                                "hidden": false,
+                                                "alignment": "LEFT"
                                             },
                                             "controls": [
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "localId": "C13e30e11-57f8-45e0-af72-973ce77144a1",
@@ -700,6 +740,7 @@
                                                         "alignment": "RIGHT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewSelectionControl",
                                                     "validation": {
                                                         "minSelections": 0,
@@ -754,6 +795,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "localId": "Cefa9d61d-8333-4e0c-8bf6-c88ffc875544",
@@ -795,6 +837,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewSelectionControl",
                                             "validation": {
                                                 "minSelections": 1,
@@ -821,13 +864,16 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewDateControl",
                                             "validation": {
                                                 "mandatory": "MANDATORY_ON_SAVE"
                                             },
-                                            "subType": "DATE"
+                                            "subType": "DATE",
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "localId": "Ce69591fc-cb68-4a02-900f-9b3d584f4ef4",
@@ -851,6 +897,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewSelectionControl",
                                             "validation": {
                                                 "minSelections": 0,
@@ -896,18 +943,21 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "localId": "C7a7cf0c0-7c42-4de5-b8cb-8851d8c51f11",
-                                            "alertText": "",
+                                            "alertText": null,
                                             "visibilityRuleId": null,
                                             "number": 0,
                                             "hidden": false,
                                             "name": "arbitrary_grid_layout",
                                             "inputSize": 12,
+                                            "displayClass": null,
                                             "alertType": "INFORMATION",
                                             "_type": "NewAlertControl",
                                             "subType": "ALERT",
+                                            "tabIndex": null,
                                             "alertBody": "This is to check the ordering controls where there are multiple controls in multiple columns in the same row.\n\nDesired order is A1, B1, C1, D1, B2, C2, B3"
                                         }
                                     ]
@@ -930,6 +980,7 @@
                                     "width": 3,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -943,9 +994,11 @@
                                             "label": {
                                                 "value": "A1",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -958,7 +1011,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -968,6 +1022,7 @@
                                     "width": 3,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -981,9 +1036,11 @@
                                             "label": {
                                                 "value": "B1",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -996,9 +1053,11 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1012,9 +1071,11 @@
                                             "label": {
                                                 "value": "B2",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1027,9 +1088,11 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1043,9 +1106,11 @@
                                             "label": {
                                                 "value": "B3",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1058,7 +1123,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1068,6 +1134,7 @@
                                     "width": 3,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1081,9 +1148,11 @@
                                             "label": {
                                                 "value": "C1",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1096,9 +1165,11 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         },
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1112,9 +1183,11 @@
                                             "label": {
                                                 "value": "C2",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1127,7 +1200,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1137,6 +1211,7 @@
                                     "width": 3,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1150,9 +1225,11 @@
                                             "label": {
                                                 "value": "D1",
                                                 "width": 12,
+                                                "hidden": false,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1165,7 +1242,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1187,18 +1265,21 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "localId": "Ca9d06734-44c9-4c18-a9d3-d83a491950cd",
-                                            "alertText": "",
+                                            "alertText": null,
                                             "visibilityRuleId": null,
                                             "number": 0,
                                             "hidden": false,
                                             "name": "repeating_collection_guidance",
                                             "inputSize": 12,
+                                            "displayClass": null,
                                             "alertType": "INFORMATION",
                                             "_type": "NewAlertControl",
                                             "subType": "ALERT",
+                                            "tabIndex": null,
                                             "alertBody": "This is to check the display of a **repeatable collection**.\n\n(has \"add\" and \"remove\" buttons like a table, but with an arbitrary layout not a table layout)."
                                         }
                                     ]
@@ -1221,6 +1302,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1232,11 +1314,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Hidden` field, no label",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1249,7 +1332,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1259,6 +1343,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1276,6 +1361,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1288,7 +1374,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "HIDDEN",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1304,6 +1391,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1315,11 +1403,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Hidden` field, has label",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1332,7 +1421,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1342,6 +1432,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1359,6 +1450,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1371,7 +1463,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "HIDDEN",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1387,6 +1480,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1398,11 +1492,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Text` field, label hidden, label blank, optional",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1415,7 +1510,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1425,6 +1521,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1436,12 +1533,13 @@
                                             "inputSize": 12,
                                             "defaultValue": null,
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1454,7 +1552,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1470,6 +1569,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1481,11 +1581,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Text` field, label hidden, label blank, optional",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1498,7 +1599,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1508,6 +1610,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1519,12 +1622,13 @@
                                             "inputSize": 12,
                                             "defaultValue": null,
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1537,7 +1641,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1553,6 +1658,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1564,11 +1670,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Text` field, label hidden, label populated, optional",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1581,7 +1688,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1591,6 +1699,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1608,6 +1717,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1620,7 +1730,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1636,6 +1747,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "prependLabel": null,
@@ -1647,11 +1759,12 @@
                                             "inputSize": 12,
                                             "defaultValue": "`Text` field, label hidden, label populated, mandatory",
                                             "label": {
-                                                "value": "",
+                                                "value": null,
                                                 "width": 12,
                                                 "hidden": true,
                                                 "alignment": "LEFT"
                                             },
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1664,7 +1777,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "STATIC_TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 },
@@ -1674,6 +1788,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": false,
                                             "prependLabel": null,
@@ -1691,6 +1806,7 @@
                                                 "alignment": "LEFT"
                                             },
                                             "groupScope": false,
+                                            "displayClass": null,
                                             "_type": "NewTextControl",
                                             "validation": {
                                                 "dataType": "TEXT",
@@ -1703,7 +1819,8 @@
                                             },
                                             "numberOfRows": null,
                                             "subType": "TEXT",
-                                            "appendLabel": null
+                                            "appendLabel": null,
+                                            "tabIndex": null
                                         }
                                     ]
                                 }
@@ -1725,6 +1842,7 @@
                                     "width": 6,
                                     "controls": [
                                         {
+                                            "placeholderText": null,
                                             "help": null,
                                             "readOnly": true,
                                             "localId": "C741aaebb-a7c0-48bd-80d5-94a5166d24f2",
@@ -1734,9 +1852,11 @@
                                             "hidden": false,
                                             "name": "arbitrary_markdown",
                                             "inputSize": 12,
+                                            "displayClass": null,
                                             "alertType": "INFORMATION",
                                             "_type": "NewAlertControl",
                                             "subType": "ALERT",
+                                            "tabIndex": null,
                                             "alertBody": "This text is **bold**. This text is *italic*. \n\nHere is a list:\n- item A\n- item B\n\nHere is a numbered list:\n1. item 1\n2. item 2\n\nThis list has increased spacing:\n\n- item AA\n\n- item BB\n- item CC\n\n# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n\nThis paragraph contains a line  \nbreak.\n\nTables |are|also\n --: | :-: | :-- \nsupported|which|is \nreally|rather|nice"
                                         }
                                     ]
@@ -1788,11 +1908,13 @@
                                                         "alignment": "LEFT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewDateControl",
                                                     "validation": {
                                                         "mandatory": "NOT_MANDATORY"
                                                     },
-                                                    "subType": "DATE"
+                                                    "subType": "DATE",
+                                                    "tabIndex": null
                                                 }
                                             ]
                                         },
@@ -1818,11 +1940,13 @@
                                                         "alignment": "LEFT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewDateControl",
                                                     "validation": {
                                                         "mandatory": "NOT_MANDATORY"
                                                     },
-                                                    "subType": "DATE"
+                                                    "subType": "DATE",
+                                                    "tabIndex": null
                                                 }
                                             ]
                                         },
@@ -1850,6 +1974,7 @@
                                             "width": 6,
                                             "controls": [
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "prependLabel": null,
@@ -1867,6 +1992,7 @@
                                                         "alignment": "LEFT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewTextControl",
                                                     "validation": {
                                                         "dataType": "TEXT",
@@ -1879,9 +2005,11 @@
                                                     },
                                                     "numberOfRows": null,
                                                     "subType": "RICH_TEXT",
-                                                    "appendLabel": null
+                                                    "appendLabel": null,
+                                                    "tabIndex": null
                                                 },
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "prependLabel": null,
@@ -1895,9 +2023,11 @@
                                                     "label": {
                                                         "value": "Responsible",
                                                         "width": 12,
+                                                        "hidden": false,
                                                         "alignment": "LEFT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewTextControl",
                                                     "validation": {
                                                         "dataType": "TEXT",
@@ -1910,9 +2040,11 @@
                                                     },
                                                     "numberOfRows": null,
                                                     "subType": "TEXT",
-                                                    "appendLabel": null
+                                                    "appendLabel": null,
+                                                    "tabIndex": null
                                                 },
                                                 {
+                                                    "placeholderText": null,
                                                     "help": null,
                                                     "readOnly": false,
                                                     "localId": "Cdcfaf148-5ff2-4019-aacb-be82e8fa56b8",
@@ -1948,6 +2080,7 @@
                                                         "alignment": "LEFT"
                                                     },
                                                     "groupScope": false,
+                                                    "displayClass": null,
                                                     "_type": "NewSelectionControl",
                                                     "validation": {
                                                         "minSelections": 0,
@@ -1979,6 +2112,1233 @@
                 }
             ],
             "visibilityRuleId": null
+        },
+        {
+            "localId": "Pe09d6688-736d-450d-8548-49537e202713",
+            "number": 3,
+            "name": "allControlTypes",
+            "title": "All control types",
+            "sections": [
+                {
+                    "localId": "S4b7cfa97-6495-4f1a-afcb-81bb196ce0ec",
+                    "number": 0,
+                    "name": "inputs",
+                    "title": "Inputs",
+                    "rows": [
+                        {
+                            "localId": "Rb83a0b4f-bb0d-49fb-82c3-e0e4585a49e4",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COLabfc2c5e-efb2-4920-b18a-bbbcc232fb89",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "placeholderText": "dd-mmm-yyyy",
+                                            "help": {
+                                                "text": "This is help popup text",
+                                                "link": "This is help link text",
+                                                "title": "This is help popup title"
+                                            },
+                                            "readOnly": false,
+                                            "localId": "Cd0d413e5-5804-448f-bc0c-44d1a432329f",
+                                            "visibilityRuleId": null,
+                                            "number": 0,
+                                            "hidden": false,
+                                            "name": "date_6",
+                                            "inputSize": 6,
+                                            "label": {
+                                                "value": "Date Input",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewDateControl",
+                                            "validation": {
+                                                "mandatory": "MANDATORY_ON_SAVE"
+                                            },
+                                            "subType": "PAST_DATE"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "C0f3b5762-4b28-4e53-8c99-299c242b4b64",
+                                            "visibilityRuleId": null,
+                                            "number": 1,
+                                            "hidden": false,
+                                            "name": "drawingSignature",
+                                            "inputSize": 8,
+                                            "drawingProperties": {
+                                                "subType": "SIGNATURE",
+                                                "freehand": {
+                                                    "uri": "",
+                                                    "altText": ""
+                                                }
+                                            },
+                                            "label": {
+                                                "value": "Drawing - signature",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "LEFT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewDrawingControl",
+                                            "validation": {
+                                                "mandatory": "NOT_MANDATORY"
+                                            }
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "C4b0a7b0f-f337-46cd-b57c-b8551658ea79",
+                                            "visibilityRuleId": null,
+                                            "number": 2,
+                                            "hidden": false,
+                                            "name": "drawingFreehand",
+                                            "inputSize": 8,
+                                            "drawingProperties": {
+                                                "subType": "FREEHAND",
+                                                "freehand": {
+                                                    "uri": "https://pbs.twimg.com/media/DtbqQd8XcAIQ8U7.jpg",
+                                                    "altText": "alt text"
+                                                }
+                                            },
+                                            "label": {
+                                                "value": "Drawing - freehand",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "LEFT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewDrawingControl",
+                                            "validation": {
+                                                "mandatory": "NOT_MANDATORY"
+                                            }
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": null,
+                                            "localId": "C8071bd4d-cd5d-4283-a9a5-c5be0ae78877",
+                                            "visibilityRuleId": null,
+                                            "number": 3,
+                                            "hidden": true,
+                                            "name": "hidden_3",
+                                            "inputSize": 6,
+                                            "defaultValue": null,
+                                            "label": {
+                                                "value": null,
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "HIDDEN",
+                                            "appendLabel": null
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "Ce1045927-8d19-449f-9f98-e70f1ecdc446",
+                                            "visibilityRuleId": null,
+                                            "number": 4,
+                                            "hidden": false,
+                                            "name": "identity_1",
+                                            "inputSize": 6,
+                                            "label": {
+                                                "value": "Identity Input",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewIdentityControl",
+                                            "validation": {
+                                                "mandatory": "NOT_MANDATORY"
+                                            }
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "Ce110bb32-639e-4f76-a8f2-fa17e61f9062",
+                                            "visibilityRuleId": null,
+                                            "number": 5,
+                                            "hidden": false,
+                                            "name": "mediaupload_1",
+                                            "inputSize": 12,
+                                            "label": {
+                                                "value": "Media Upload",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "mediaProperties": {
+                                                "subType": "IMAGE"
+                                            },
+                                            "_type": "NewAttachedMediaControl",
+                                            "validation": {
+                                                "mandatory": "NOT_MANDATORY"
+                                            }
+                                        },
+                                        {
+                                            "placeholderText": "this is placeholder",
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": "prepend",
+                                            "localId": "Cc4c581cf-65a1-4f8c-a7c3-ee2ab13191d6",
+                                            "visibilityRuleId": null,
+                                            "number": 6,
+                                            "hidden": false,
+                                            "name": "number_1",
+                                            "inputSize": 6,
+                                            "defaultValue": null,
+                                            "label": {
+                                                "value": "Number Input",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewNumericControl",
+                                            "validation": {
+                                                "dataType": "INTEGER",
+                                                "pattern": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "step": 1,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "appendLabel": "append"
+                                        },
+                                        {
+                                            "placeholderText": "this is placeholder",
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": null,
+                                            "localId": "C0866c4f5-34e0-4057-af4f-867f7fabc9ae",
+                                            "visibilityRuleId": null,
+                                            "number": 7,
+                                            "hidden": false,
+                                            "name": "password_1",
+                                            "inputSize": 6,
+                                            "defaultValue": null,
+                                            "label": {
+                                                "value": "Password Input",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": "",
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "PASSWORD",
+                                            "appendLabel": null
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": null,
+                                            "localId": "C4c9cc813-c56e-4d2b-bedb-b47070c82f52",
+                                            "visibilityRuleId": null,
+                                            "number": 8,
+                                            "hidden": false,
+                                            "name": "richtext_4",
+                                            "inputSize": 6,
+                                            "defaultValue": "has default text, no prepend/append",
+                                            "label": {
+                                                "value": "Rich Text",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "RICH_TEXT",
+                                            "appendLabel": null
+                                        },
+                                        {
+                                            "placeholderText": "this is placeholder",
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": "this is prepend",
+                                            "localId": "C08982656-f1e4-4508-a85d-0d6d43021213",
+                                            "visibilityRuleId": null,
+                                            "number": 9,
+                                            "hidden": false,
+                                            "name": "text_17",
+                                            "inputSize": 6,
+                                            "defaultValue": null,
+                                            "label": {
+                                                "value": "Text Input",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "TEXT",
+                                            "appendLabel": "this is append"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "prependLabel": null,
+                                            "localId": "C96e2d899-cbcf-4264-8e64-2683d8e8e401",
+                                            "visibilityRuleId": null,
+                                            "number": 10,
+                                            "hidden": false,
+                                            "name": "textarea_1",
+                                            "inputSize": 6,
+                                            "defaultValue": "has default text, no prepend/append",
+                                            "label": {
+                                                "value": "Text Area",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": 2,
+                                            "subType": "TEXT_AREA",
+                                            "appendLabel": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                },
+                {
+                    "localId": "S5744aba8-8955-449e-8491-961a99cbfb04",
+                    "number": 1,
+                    "name": "selects",
+                    "title": "Selects",
+                    "rows": [
+                        {
+                            "localId": "R181435b6-9689-46b8-baaf-660d362a5fab",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COL2b286a6e-6b0f-4fa5-8e61-df25db0f0531",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "C0113950b-756c-4e8f-943d-5f0651e84c59",
+                                            "visibilityRuleId": null,
+                                            "number": 0,
+                                            "hidden": false,
+                                            "name": "checkboxesVertical",
+                                            "inputSize": 6,
+                                            "choices": [
+                                                {
+                                                    "selectedByDefault": true,
+                                                    "label": "Option one",
+                                                    "value": "1",
+                                                    "itemId": 0
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option two",
+                                                    "value": "2",
+                                                    "itemId": 1
+                                                }
+                                            ],
+                                            "label": {
+                                                "value": "Checkboxes - vertical",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewSelectionControl",
+                                            "validation": {
+                                                "minSelections": 0,
+                                                "maxSelections": 2,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "subType": "CHECKBOXES",
+                                            "tabIndex": 0
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "C0d4b0038-f6f3-4a08-9984-942731e98f23",
+                                            "visibilityRuleId": null,
+                                            "number": 1,
+                                            "hidden": false,
+                                            "name": "checkboxesHorizontal",
+                                            "inputSize": 6,
+                                            "choices": [
+                                                {
+                                                    "selectedByDefault": true,
+                                                    "label": "Option one",
+                                                    "value": "1",
+                                                    "itemId": 0
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option two",
+                                                    "value": "2",
+                                                    "itemId": 1
+                                                }
+                                            ],
+                                            "label": {
+                                                "value": "Checkboxes - horizontal",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewSelectionControl",
+                                            "validation": {
+                                                "minSelections": 0,
+                                                "maxSelections": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "subType": "CHECKBOXES_INLINE",
+                                            "tabIndex": 0
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "Cd5eaf5e9-4184-43ae-83c4-0a930bbf49b7",
+                                            "visibilityRuleId": null,
+                                            "number": 2,
+                                            "hidden": false,
+                                            "name": "multipleselect_1",
+                                            "inputSize": 6,
+                                            "choices": [
+                                                {
+                                                    "selectedByDefault": true,
+                                                    "label": "Option one",
+                                                    "value": "1",
+                                                    "itemId": 0
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option two",
+                                                    "value": "2",
+                                                    "itemId": 1
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option three",
+                                                    "value": "3",
+                                                    "itemId": 2
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option four",
+                                                    "value": "4",
+                                                    "itemId": 3
+                                                }
+                                            ],
+                                            "label": {
+                                                "value": "Multiple Select",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewSelectionControl",
+                                            "validation": {
+                                                "minSelections": 0,
+                                                "maxSelections": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "subType": "LIST_BOX_MULTI",
+                                            "tabIndex": 0
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "Cfddd205d-7ef9-4249-a9cf-fdeb2be746d2",
+                                            "visibilityRuleId": null,
+                                            "number": 3,
+                                            "hidden": false,
+                                            "name": "radioButtonsVertical",
+                                            "inputSize": 6,
+                                            "choices": [
+                                                {
+                                                    "selectedByDefault": true,
+                                                    "label": "Option one",
+                                                    "value": "1",
+                                                    "itemId": 0
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option two",
+                                                    "value": "2",
+                                                    "itemId": 1
+                                                }
+                                            ],
+                                            "label": {
+                                                "value": "Radio Buttons - vertical",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewSelectionControl",
+                                            "validation": {
+                                                "minSelections": 0,
+                                                "maxSelections": 1,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "subType": "RADIO_BUTTONS",
+                                            "tabIndex": 0
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": false,
+                                            "localId": "Cee377fd2-aed6-4756-93e3-8f98a666879d",
+                                            "visibilityRuleId": null,
+                                            "number": 4,
+                                            "hidden": false,
+                                            "name": "radioButtonsHorizontal",
+                                            "inputSize": 6,
+                                            "choices": [
+                                                {
+                                                    "selectedByDefault": true,
+                                                    "label": "Option one",
+                                                    "value": "1",
+                                                    "itemId": 0
+                                                },
+                                                {
+                                                    "selectedByDefault": false,
+                                                    "label": "Option two",
+                                                    "value": "2",
+                                                    "itemId": 1
+                                                }
+                                            ],
+                                            "label": {
+                                                "value": "Radio Buttons - horizontal",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewSelectionControl",
+                                            "validation": {
+                                                "minSelections": 0,
+                                                "maxSelections": 1,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "subType": "RADIO_BUTTONS_INLINE",
+                                            "tabIndex": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                },
+                {
+                    "localId": "S5968821d-3692-485b-b948-ad2bafa7e076",
+                    "number": 2,
+                    "name": "staticData",
+                    "title": "Static data",
+                    "rows": [
+                        {
+                            "localId": "Rfc35977b-d3ba-4c0e-8fc9-cfb0ddd15a5c",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COL3c53a5bf-e405-4bd4-82ce-e50b97893b2a",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "Ca233861e-9559-4322-a77b-70fcc668346f",
+                                            "alertText": "Alert heading",
+                                            "visibilityRuleId": null,
+                                            "number": 0,
+                                            "hidden": false,
+                                            "name": "alert_6",
+                                            "inputSize": 12,
+                                            "alertType": "DEFAULT",
+                                            "_type": "NewAlertControl",
+                                            "subType": "ALERT",
+                                            "alertBody": "Alert text - clear, default"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C4e19bad5-dc05-472b-9d02-c4321cc27e04",
+                                            "alertText": "Alert heading",
+                                            "visibilityRuleId": null,
+                                            "number": 1,
+                                            "hidden": false,
+                                            "name": "alert_7",
+                                            "inputSize": 12,
+                                            "alertType": "SUCCESS",
+                                            "_type": "NewAlertControl",
+                                            "subType": "ALERT",
+                                            "alertBody": "Alert text - green, success"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "Cccb72240-1c6d-4044-be8b-ff345c73953f",
+                                            "alertText": "Alert heading",
+                                            "visibilityRuleId": null,
+                                            "number": 2,
+                                            "hidden": false,
+                                            "name": "alert_8",
+                                            "inputSize": 12,
+                                            "alertType": "INFORMATION",
+                                            "_type": "NewAlertControl",
+                                            "subType": "ALERT",
+                                            "alertBody": "Alert text - blue, information"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C503809fd-1fc1-452f-8c59-6065c16d15e5",
+                                            "alertText": "Alert heading",
+                                            "visibilityRuleId": null,
+                                            "number": 3,
+                                            "hidden": false,
+                                            "name": "alert_5",
+                                            "inputSize": 12,
+                                            "alertType": "WARNING",
+                                            "_type": "NewAlertControl",
+                                            "subType": "ALERT",
+                                            "alertBody": "Alert text - yellow, warning"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "Cd5ce8821-12f1-4a96-a781-ea252b7e1a21",
+                                            "alertText": "Alert heading",
+                                            "visibilityRuleId": null,
+                                            "number": 4,
+                                            "hidden": false,
+                                            "name": "alert_9",
+                                            "inputSize": 12,
+                                            "alertType": "DANGER",
+                                            "_type": "NewAlertControl",
+                                            "subType": "ALERT",
+                                            "alertBody": "Alert text - red, danger"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C8a5b32b9-6002-4e87-870d-d3f4853c2355",
+                                            "visibilityRuleId": null,
+                                            "number": 5,
+                                            "hidden": false,
+                                            "name": "mediaHostedVideo",
+                                            "inputSize": 12,
+                                            "label": {
+                                                "value": "Media - hosted video",
+                                                "width": 4,
+                                                "hidden": true,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "mediaProperties": {
+                                                "subType": "VIDEO",
+                                                "video": {
+                                                    "source": "HOSTED",
+                                                    "aspectRatio": "RATIO_16_9",
+                                                    "altText": "this is short description",
+                                                    "longDesc": "this is long description",
+                                                    "hosted": {
+                                                        "host": "YOU_TUBE",
+                                                        "videoId": "Kh0Y2hVe_bw"
+                                                    },
+                                                    "local": {
+                                                        "mp4Uri": "",
+                                                        "oggUri": "",
+                                                        "webMUri": ""
+                                                    }
+                                                },
+                                                "audio": {
+                                                    "source": "HOSTED",
+                                                    "hosted": {
+                                                        "host": "SOUND_CLOUD",
+                                                        "audioId": ""
+                                                    },
+                                                    "local": {
+                                                        "mpegUri": "",
+                                                        "oggUri": "",
+                                                        "wavUri": ""
+                                                    }
+                                                },
+                                                "image": {
+                                                    "uri": "",
+                                                    "altText": ""
+                                                }
+                                            },
+                                            "_type": "NewStaticMediaControl"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C11f3df0e-0858-4778-8a39-820f5b274292",
+                                            "visibilityRuleId": null,
+                                            "number": 6,
+                                            "hidden": false,
+                                            "name": "mediaImage",
+                                            "inputSize": 12,
+                                            "label": {
+                                                "value": "Media - image",
+                                                "width": 4,
+                                                "hidden": true,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "mediaProperties": {
+                                                "subType": "IMAGE",
+                                                "video": {
+                                                    "source": "HOSTED",
+                                                    "aspectRatio": "RATIO_16_9",
+                                                    "altText": "",
+                                                    "longDesc": "",
+                                                    "hosted": {
+                                                        "host": "YOU_TUBE",
+                                                        "videoId": ""
+                                                    },
+                                                    "local": {
+                                                        "mp4Uri": "",
+                                                        "oggUri": "",
+                                                        "webMUri": ""
+                                                    }
+                                                },
+                                                "audio": {
+                                                    "source": "HOSTED",
+                                                    "hosted": {
+                                                        "host": "SOUND_CLOUD",
+                                                        "audioId": ""
+                                                    },
+                                                    "local": {
+                                                        "mpegUri": "",
+                                                        "oggUri": "",
+                                                        "wavUri": ""
+                                                    }
+                                                },
+                                                "image": {
+                                                    "uri": "https://pbs.twimg.com/media/DtbqQd8XcAIQ8U7.jpg",
+                                                    "altText": "this is alt text"
+                                                }
+                                            },
+                                            "_type": "NewStaticMediaControl"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - default",
+                                            "localId": "C76f4fcda-7433-4a6d-a664-18a7e44ce1f0",
+                                            "visibilityRuleId": null,
+                                            "number": 7,
+                                            "hidden": false,
+                                            "name": "panel_1",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "DEFAULT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - primary",
+                                            "localId": "C8e9aa53b-bf47-4786-b422-0145f49211b6",
+                                            "visibilityRuleId": null,
+                                            "number": 8,
+                                            "hidden": false,
+                                            "name": "panel_2",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "PRIMARY"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - success",
+                                            "localId": "Ccda1a430-9ea1-436e-9418-29b5c31d7524",
+                                            "visibilityRuleId": null,
+                                            "number": 9,
+                                            "hidden": false,
+                                            "name": "panel_3",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "SUCCESS"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - information",
+                                            "localId": "Ceb11421e-4dcc-40e9-a025-e49d612101a3",
+                                            "visibilityRuleId": null,
+                                            "number": 10,
+                                            "hidden": false,
+                                            "name": "panel_4",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "INFORMATION"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - warning",
+                                            "localId": "C186f940f-a530-4fdc-967f-ae8d1cb17186",
+                                            "visibilityRuleId": null,
+                                            "number": 11,
+                                            "hidden": false,
+                                            "name": "panel_5",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "WARNING"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "panelBody": "Panel text - danger",
+                                            "localId": "C0863c4d7-7834-43d7-bbaa-fe85874cd0eb",
+                                            "visibilityRuleId": null,
+                                            "number": 12,
+                                            "hidden": false,
+                                            "name": "panel_6",
+                                            "inputSize": 12,
+                                            "panelText": "Panel heading",
+                                            "_type": "NewPanelControl",
+                                            "subType": "PANEL",
+                                            "panelType": "DANGER"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "prependLabel": null,
+                                            "localId": "C46f19b7a-8854-4d5c-8ae4-91c4dfead60e",
+                                            "visibilityRuleId": null,
+                                            "number": 13,
+                                            "hidden": false,
+                                            "name": "staticText",
+                                            "inputSize": 6,
+                                            "defaultValue": "Label is hidden by default",
+                                            "label": {
+                                                "value": "Static text",
+                                                "width": 4,
+                                                "hidden": false,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "displayClass": "",
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "STATIC_TEXT",
+                                            "appendLabel": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                },
+                {
+                    "localId": "Sb6efcdf0-3ed9-4cb2-a04d-c0aba5e331d3",
+                    "number": 3,
+                    "name": "dynamicData",
+                    "title": "Dynamic data",
+                    "rows": [
+                        {
+                            "localId": "R63c87807-6f7f-402a-b0a1-3b5ffae0932a",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COLd2ef675c-5c22-4107-9734-c4aa9d514bec",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C0ebe7dc7-b991-401f-882c-84a18d266452",
+                                            "visibilityRuleId": null,
+                                            "number": 0,
+                                            "hidden": false,
+                                            "parameters": [
+                                                {
+                                                    "name": "com.olmgroup.usp.components.address.category.type",
+                                                    "value": "HOME"
+                                                },
+                                                {
+                                                    "name": "com.olmgroup.usp.components.address.category.usage",
+                                                    "value": "PERMANENT"
+                                                }
+                                            ],
+                                            "name": "address_1",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:address",
+                                            "label": {
+                                                "value": "Person address",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C6b7c5488-78f6-41bd-8929-1bc448fc4b06",
+                                            "visibilityRuleId": null,
+                                            "number": 1,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "age_2",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:age",
+                                            "label": {
+                                                "value": "Age",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "INTEGER"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C85124807-f70f-414a-96f3-a20b11ec2130",
+                                            "visibilityRuleId": null,
+                                            "number": 2,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "dateofbirth_3",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:dateOfBirth",
+                                            "label": {
+                                                "value": "Date of Birth",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "SIMPLE_FUZZY_DATE"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C2fe16f55-15e2-404a-9377-6a5ebfdfd255",
+                                            "visibilityRuleId": null,
+                                            "number": 3,
+                                            "hidden": false,
+                                            "parameters": [
+                                                {
+                                                    "name": "com.olmgroup.usp.components.contact.category.contactType",
+                                                    "value": "HOME"
+                                                },
+                                                {
+                                                    "name": "com.olmgroup.usp.components.contact.category.contactUsage",
+                                                    "value": "PERMANENT"
+                                                }
+                                            ],
+                                            "name": "emailaddress_4",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:emailContact",
+                                            "label": {
+                                                "value": "Email Address",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C7fb47b73-642a-4e16-a3f7-e6da57175303",
+                                            "visibilityRuleId": null,
+                                            "number": 4,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "firstlanguage_5",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:preferredLanguage",
+                                            "label": {
+                                                "value": "First Language",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C6aed6e25-9d79-44a5-80a1-768dd859a7aa",
+                                            "visibilityRuleId": null,
+                                            "number": 5,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "nhsnumber_6",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:nhsNumber",
+                                            "label": {
+                                                "value": "NHS Number",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C3ab5f009-5b42-4d1e-a71a-b4b43cd49e92",
+                                            "visibilityRuleId": null,
+                                            "number": 6,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "identifier_7",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:identifier",
+                                            "label": {
+                                                "value": "Person identifier",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C43611a45-8c51-4808-8242-46063e68f7b5",
+                                            "visibilityRuleId": null,
+                                            "number": 7,
+                                            "hidden": false,
+                                            "parameters": [],
+                                            "name": "personname_8",
+                                            "inputSize": 6,
+                                            "valueId": "usp:resolver:person:name",
+                                            "label": {
+                                                "value": "Person name",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewSuppliedControl",
+                                            "subType": "TEXT"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                },
+                {
+                    "localId": "S3833c6d1-aed9-4bed-a2ef-48bcd8df193c",
+                    "number": 4,
+                    "name": "dynamicDataLists",
+                    "title": "Dynamic data lists",
+                    "rows": [
+                        {
+                            "localId": "R7d765ea2-e533-49e1-bf67-a68ead5190b0",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COLcaee50e1-2d71-4671-916e-e7adb5043d60",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "prependLabel": null,
+                                            "localId": "C50aa0218-7440-43da-9e35-762f1e4baf96",
+                                            "visibilityRuleId": null,
+                                            "number": 0,
+                                            "hidden": false,
+                                            "name": "statictext_8",
+                                            "inputSize": 6,
+                                            "defaultValue": "Out of scope",
+                                            "label": {
+                                                "value": "",
+                                                "width": 4,
+                                                "hidden": true,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "_type": "NewTextControl",
+                                            "validation": {
+                                                "dataType": "TEXT",
+                                                "pattern": null,
+                                                "minLength": null,
+                                                "maxLength": null,
+                                                "minValue": null,
+                                                "maxValue": null,
+                                                "mandatory": "NOT_MANDATORY"
+                                            },
+                                            "numberOfRows": null,
+                                            "subType": "STATIC_TEXT",
+                                            "appendLabel": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                },
+                {
+                    "localId": "Sf7b6114c-7181-4fcc-9683-1ce87362c430",
+                    "number": 5,
+                    "name": "calculations",
+                    "title": "Calculations",
+                    "rows": [
+                        {
+                            "localId": "R715cbc74-0370-4b0b-91f5-de72167f9433",
+                            "number": 0,
+                            "columns": [
+                                {
+                                    "localId": "COLac66f7b7-30b2-4ddb-85ed-dfbb6339bffb",
+                                    "number": 0,
+                                    "width": 12,
+                                    "controls": [
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C10b80d7e-f5da-412a-a3f4-2f8dbb7b8d2a",
+                                            "visibilityRuleId": null,
+                                            "model": "calculation model",
+                                            "number": 0,
+                                            "hidden": false,
+                                            "name": "trigger_1",
+                                            "inputSize": 6,
+                                            "environment": "calculation environment",
+                                            "groupScope": false,
+                                            "trigger": {
+                                                "type": "BUTTON",
+                                                "label": "Calculate - button"
+                                            },
+                                            "_type": "NewCalculationTriggerControl"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "C9baa186e-1753-4684-90d2-94001936bebe",
+                                            "visibilityRuleId": null,
+                                            "model": "calc model",
+                                            "number": 1,
+                                            "hidden": false,
+                                            "name": "trigger_2",
+                                            "inputSize": 6,
+                                            "environment": "calc env",
+                                            "groupScope": false,
+                                            "trigger": {
+                                                "type": "AUTO",
+                                                "label": "Calculate - automatic"
+                                            },
+                                            "_type": "NewCalculationTriggerControl"
+                                        },
+                                        {
+                                            "help": null,
+                                            "readOnly": true,
+                                            "localId": "Cd4286498-73e8-4344-b942-282f1cebff5d",
+                                            "visibilityRuleId": null,
+                                            "number": 2,
+                                            "hidden": false,
+                                            "name": "calculationresult_1",
+                                            "inputSize": 6,
+                                            "outputName": "output name",
+                                            "defaultValue": "Result will appear here.",
+                                            "label": {
+                                                "value": "Result",
+                                                "width": 4,
+                                                "alignment": "RIGHT"
+                                            },
+                                            "groupScope": false,
+                                            "_type": "NewCalculationResultControl"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "groups": [],
+                    "visibilityRuleId": null
+                }
+            ],
+            "visibilityRuleId": null
         }
     ],
     "rules": [
@@ -1993,7 +3353,7 @@
             "designerVersion": "1.1.12",
             "name": "venue is \"Other\"",
             "type": "rule",
-            "description": "",
+            "description": null,
             "design": [
                 {
                     "type": "RULE_PART",
@@ -2023,7 +3383,7 @@
             "designerVersion": "1.1.12",
             "name": "facilities include \"Public transport\"",
             "type": "rule",
-            "description": "",
+            "description": null,
             "design": [
                 {
                     "type": "RULE_PART",
@@ -2053,7 +3413,7 @@
             "designerVersion": "1.1.12",
             "name": "next steps are \"Schedule next lunch\"",
             "type": "rule",
-            "description": "",
+            "description": null,
             "design": [
                 {
                     "type": "RULE_PART",

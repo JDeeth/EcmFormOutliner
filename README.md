@@ -2,51 +2,33 @@
 
 ---
 
-This is (/will become) an app for parsing OLM ECLIPSE Case Management form
-designs into a simplified outline, presented in a Word document.
+This is (/will become) an app for parsing OLM ECLIPSE Case Management form designs into a simplified outline, presented in a Word document.
 
-For example, an outline like this:
+_Form as viewed by user_
+![screenshot of form in Form Editor](reference/form_page_1.png)
 
-| Question                             | Type                    |
-| ------------------------------------ | ----------------------- |
-| __Date of order *__                  | Date                    |
-| __Sandwich type__                    | Ploughman / BLT / Other |
-| _(if Other)_ __Other sandwich type__ | Free text               |
+_Example output_
+![screenshot of Word outline of same form](reference/reference_outline_screenshot.png)
 
-represents a section of a form where the user can record a date and pick one
-of three options. If the selection is "Other" then a free text box is shown
-where the user can record the details.
+This is to facilitate informed discussion about form contents and behaviour which is hard to communicate with screenshots alone - particularly contents of drop-down lists and behaviour of conditionally hidden sections/questions.
 
 ## Status
 
-Non-functional. At this point all that exists is the package framework.
-
-## Installation
-
-On a PC with Python installed:
-
-```bash
-pip install ecm_form_outliner
-```
-
-Then to launch:
-
-```bash
-ecm_form_outliner
-```
+Under development, not yet functional.
 
 ## Development
 
-```bash
+```shell
 git clone https://github.com/JDeeth/EcmFormOutliner
 cd EcmFormOutliner
-python3 -m venv venv
-. venv/bin/activate
-python3 -m pip install .[dev]
+py -m venv venv
+venv/Scripts/activate
+pip install .[dev]
 ```
 
 To run tests:
 
 ```bash
-python3 -m pytest .
+pytest .
+pylint .
 ```
