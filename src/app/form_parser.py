@@ -15,13 +15,24 @@ class FormParser:
 
     def __init__(self, form_json: Dict):
         """Parse form design from JSON"""
-        self._json = form_json
-        self._rules = self._parse_rule(form_json)
-        self._pages = self._parse_pages(form_json)
 
-    def _parse_rule(self, form_json: Dict) -> List[Form.Rule]:
+        # must calculate rules first, & have available for page/** parsers
+        self._rules = self._parse_rules(form_json["rules"])
+        self._form = self._parse_form(form_json, self._rules)
+
+    def _parse_form(self, form_json: Dict, rules: List[Form.Rule]) -> Form.Form:
+        pages = self._parse_pages(form_json["pages"])
+        return Form.Form(
+            name=form_json["name"],
+            type_guid=form_json["formDefinitionId"],
+            rules=rules,
+            pages=pages,
+            source_json=form_json,
+        )
+
+    def _parse_rules(self, rules_json: Dict) -> List[Form.Rule]:
         rules = []
-        for rule in form_json["rules"]:
+        for rule in rules_json:
             rules.append(
                 Form.Rule(
                     name=rule["name"],
@@ -31,9 +42,9 @@ class FormParser:
             )
             return rules
 
-    def _parse_pages(self, form_json: Dict) -> List[Form.Page]:
+    def _parse_pages(self, pages_json: Dict) -> List[Form.Page]:
         pages = []
-        for page in form_json["pages"]:
+        for page in pages_json:
             pages.append(
                 Form.Page(
                     name=page["name"],
@@ -66,17 +77,15 @@ class FormParser:
     def _parse_subsections(self, section_json: Dict) -> List[Form.Subsection]:
         """Resolves section into tables, repeating groups, and plain runs of controls"""
 
-        # gather controls from each row
-        subsections = {}
+        # gather controls from adjoining rows into PlainRun subsections
+        subsections: Dict[int, Form.Subsection] = {}
         for row in section_json["rows"]:
             row_num = row["number"]
-            subsections[row_num] = subsections.pop(row_num - 1, [])
+            subsections[row_num] = subsections.pop(
+                row_num - 1, Form.PlainRun(row_number=row_num, controls=[])
+            )
             for column in row["columns"]:
-                subsections[row_num].extend(column["controls"])
-
-        # convert lists of controls into PlainRun objects for easier parsing later
-        for row_num, controls in subsections.items():
-            subsections[row_num] = Form.PlainRun(row_number=row_num, controls=controls)
+                subsections[row_num].controls.extend(column["controls"])
 
         # gather groups and tables
         for group in section_json["groups"]:
@@ -97,24 +106,9 @@ class FormParser:
             return cls(json.load(file))
 
     @property
-    def json(self):
-        """Returns the original JSON"""
-        return self._json
-
-    @property
-    def name(self):
-        """The form's name"""
-        return self._json["name"]
-
-    @property
-    def rules(self):
-        """The form's rules"""
-        return self._rules
-
-    @property
-    def pages(self):
-        """The form's pages"""
-        return self._pages
+    def form(self) -> Form.Form:
+        """The simplified form"""
+        return self._form
 
     def _identify_rule(self, rule_id):
         """Look up name of page/section/collection/field visibility rule"""

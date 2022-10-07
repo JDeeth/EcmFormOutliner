@@ -25,15 +25,16 @@ def should_throw_jsondecodeerror_if_infile_not_json():
 @pytest.fixture(name="lunch_form")
 def fixture_lunch_form():
     filename = "tests/Lunch planning_1.json"
-    return FormParser.load(filename)
+    parser = FormParser.load(filename)
+    return parser.form
 
 
-def should_parse_form_design_json(lunch_form: FormParser):
-    assert lunch_form.json != {}
+def should_parse_form_design_json(lunch_form: Form.Form):
+    assert lunch_form.source_json != {}
     assert lunch_form.name == "Lunch planning"
 
 
-def should_extract_rules_from_form_design(lunch_form: FormParser):
+def should_extract_rules_from_form_design(lunch_form: Form.Form):
     rule_venue_other = Form.Rule(
         name='venue is "Other"',
         description="",
@@ -42,7 +43,7 @@ def should_extract_rules_from_form_design(lunch_form: FormParser):
     assert rule_venue_other in lunch_form.rules
 
 
-def should_extract_pages_from_form_design(lunch_form: FormParser):
+def should_extract_pages_from_form_design(lunch_form: Form.Form):
     expected_page_titles = ["Venue", "Invitees", "Follow-up"]
     page_titles = [page.title for page in lunch_form.pages]
 
@@ -58,8 +59,7 @@ def should_extract_pages_from_form_design(lunch_form: FormParser):
     assert len(page1.sections) == 3
 
 
-def should_find_one_subsection_with_five_controls_in_p1s2():
-    lunch_form = FormParser.load("tests/Lunch planning_1.json")
+def should_find_one_subsection_with_five_controls_in_p1s2(lunch_form: Form.Form):
     venue_details_section = lunch_form.pages[0].sections[1]
 
     assert venue_details_section.title == "Venue details"
@@ -68,8 +68,7 @@ def should_find_one_subsection_with_five_controls_in_p1s2():
     assert len(first_subsection.controls) == 5
 
 
-def should_find_run_group_run_in_p3s2():
-    lunch_form = FormParser.load("tests/Lunch planning_1.json")
+def should_find_run_group_run_in_p3s2(lunch_form: Form.Form):
     p3s2 = lunch_form.pages[2].sections[1]
 
     for a, b in zip(

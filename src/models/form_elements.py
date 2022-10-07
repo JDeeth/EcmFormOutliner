@@ -64,3 +64,19 @@ class Rule:
     name: str
     local_id: str
     description: str = ""
+
+
+@dataclass
+class Form:
+    """Simplified representation of an ECM form
+
+    Discards layout (row, column) information to present the form controls in
+    logical order
+    """
+
+    name: str
+    type_guid: str
+
+    pages: List[Page]
+    rules: List[Rule]
+    source_json: str
