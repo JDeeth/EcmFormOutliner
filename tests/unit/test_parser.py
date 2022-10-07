@@ -1,7 +1,7 @@
 """Testing internal components of FormParser"""
 import pytest
 from app.form_parser import FormParser
-from models.form.subsection import PlainRun
+from models.form_elements import PlainRun
 
 # pylint: disable=invalid-name,missing-class-docstring,missing-function-docstring,protected-access
 

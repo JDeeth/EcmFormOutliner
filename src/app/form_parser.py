@@ -7,11 +7,7 @@ Converts JSON from Form Designer into a flattened outline
 import json
 from typing import Dict, List
 
-from models import Form
-from models.form.page import Page
-from models.form.rule import Rule
-from models.form.section import Section
-from models.form.subsection import PlainRun, RepeatableGroup, Subsection
+import models.form_elements as Form
 
 
 class FormParser:
@@ -23,7 +19,7 @@ class FormParser:
         self._rules = self._parse_rule(form_json)
         self._pages = self._parse_pages(form_json)
 
-    def _parse_rule(self, form_json: Dict) -> List[Rule]:
+    def _parse_rule(self, form_json: Dict) -> List[Form.Rule]:
         rules = []
         for rule in form_json["rules"]:
             rules.append(
@@ -35,7 +31,7 @@ class FormParser:
             )
             return rules
 
-    def _parse_pages(self, form_json: Dict) -> List[Page]:
+    def _parse_pages(self, form_json: Dict) -> List[Form.Page]:
         pages = []
         for page in form_json["pages"]:
             pages.append(
@@ -50,11 +46,11 @@ class FormParser:
             )
         return pages
 
-    def _parse_sections(self, page_json: Dict) -> List[Section]:
+    def _parse_sections(self, page_json: Dict) -> List[Form.Section]:
         sections = []
         for section in page_json["sections"]:
             sections.append(
-                Section(
+                Form.Section(
                     name=section["name"],
                     title=section["title"],
                     number=section["number"],
@@ -67,7 +63,7 @@ class FormParser:
             )
         return sections
 
-    def _parse_subsections(self, section_json: Dict) -> List[Subsection]:
+    def _parse_subsections(self, section_json: Dict) -> List[Form.Subsection]:
         """Resolves section into tables, repeating groups, and plain runs of controls"""
 
         # gather controls from each row
@@ -80,7 +76,7 @@ class FormParser:
 
         # convert lists of controls into PlainRun objects for easier parsing later
         for row_num, controls in subsections.items():
-            subsections[row_num] = PlainRun(row_number=row_num, controls=controls)
+            subsections[row_num] = Form.PlainRun(row_number=row_num, controls=controls)
 
         # gather groups and tables
         for group in section_json["groups"]:
@@ -92,7 +88,7 @@ class FormParser:
 
     def _parse_group(self, group_json):
         """placeholder"""
-        return RepeatableGroup(row_number=group_json["number"], controls=[])
+        return Form.RepeatableGroup(row_number=group_json["number"], controls=[])
 
     @classmethod
     def load(cls, filename: str):

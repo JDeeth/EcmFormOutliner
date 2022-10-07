@@ -3,8 +3,7 @@ from json import JSONDecodeError
 import pytest
 
 from app.form_parser import FormParser
-from models import Form
-from models.form.subsection import PlainRun, RepeatableGroup
+import models.form_elements as Form
 
 # pylint: disable=invalid-name,missing-function-docstring
 
@@ -73,5 +72,7 @@ def should_find_run_group_run_in_p3s2():
     lunch_form = FormParser.load("tests/Lunch planning_1.json")
     p3s2 = lunch_form.pages[2].sections[1]
 
-    for a, b in zip(p3s2.subsections, [PlainRun, RepeatableGroup, PlainRun]):
+    for a, b in zip(
+        p3s2.subsections, [Form.PlainRun, Form.RepeatableGroup, Form.PlainRun]
+    ):
         assert isinstance(a, b)
