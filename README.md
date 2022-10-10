@@ -1,7 +1,5 @@
 # ECM Form Outliner
 
----
-
 This is (/will become) an app for parsing OLM ECLIPSE Case Management form designs into a simplified outline, presented in a Word document.
 
 _Form as viewed by user_
