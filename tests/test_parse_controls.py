@@ -91,3 +91,16 @@ def should_parse_conditional_text_control():
     assert item.details == ""
     assert item.visibility_rule == 'venue is "Other"'
     assert item.mandatory is False
+
+
+def should_parse_unrecognised_control():
+    json_str = "{}"
+    jsn = json.loads(json_str)
+
+    item: DisplayControl = parse_control(jsn, rules)
+
+    assert item.label is None
+    assert item.type is None
+    assert item.details == ""
+    assert item.visibility_rule == ""
+    assert item.mandatory is None

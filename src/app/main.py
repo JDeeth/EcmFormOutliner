@@ -55,9 +55,11 @@ def _parse_subsections(section_json: JsonObject) -> list[JsonObject | ControlRun
 def main():
     while True:
         json_filename = input("json filename: ")
-        template_filename = input("template filename: ")
-        output_filename = input("output filename: ")
-        if input("OK? ").lower() == "y":
+        template_filename = input("template filename [template.docx]: ")
+        template_filename = template_filename or "template.docx"
+        output_filename = input("output filename [output.docx]: ")
+        output_filename = output_filename or "output.docx"
+        if input("OK? [Y]/n") in ["", "y", "Y"]:
             break
     parse(json_filename, template_filename, output_filename)
 

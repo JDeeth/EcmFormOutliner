@@ -73,6 +73,6 @@ def parse_control(jsn: dict, rules: list) -> DisplayControl:
         "alert": Alert,
         "text": TextLine,
     }
-    subtype = jsn.get("subType").lower()
+    subtype = jsn.get("subType", "").lower()
     type_ = types.get(subtype, DisplayControl)
     return type_(jsn, rules)
