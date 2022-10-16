@@ -39,7 +39,11 @@ class DisplayControl:
 
     @property
     def mandatory(self) -> Optional[bool]:
-        """MANDATORY_ON_SAVE: True. NOT_MANDATORY: False. Otherwise None."""
+        """
+        MANDATORY_ON_SAVE: True
+        NOT_MANDATORY: False
+        otherwise: None
+        """
         return self._mandatory
 
 
@@ -47,7 +51,9 @@ class Alert(DisplayControl):
     def __init__(self, json_, rules):
         super().__init__(json_, rules)
         self._type = "Guidance text"
-        self._label = "\n".join([self._json["alertText"], self._json["alertBody"]])
+        self._label = "\n".join(
+            [self._json["alertText"], self._json["alertBody"]],
+        )
 
 
 class TextLine(DisplayControl):

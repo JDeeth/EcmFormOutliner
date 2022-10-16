@@ -1,5 +1,6 @@
-import docx
 import json
+
+import docx
 
 from app.util import JsonObject, jsonpath
 
